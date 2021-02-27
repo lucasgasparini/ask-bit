@@ -6,13 +6,15 @@ export default function Home() {
   let [answer, setAnswer] = useState(2);
 
   const answerQuestion = () => {
-    answer = Math.random() < 0.5;
-    console.log(answer);
+    answer = Math.random() < 0.5;	
     if (answer) {
       setAnswer(1);
     } else {
       setAnswer(0);
     }
+	setTimeout(() => {
+		setAnswer(2);
+	}, 3000)
   };
 
   return (
