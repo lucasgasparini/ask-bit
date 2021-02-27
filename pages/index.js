@@ -22,12 +22,14 @@ export default function Home() {
       {answer !== 0 && answer !== 1 && (
         <Image src="/bit.png" width={128} height={128} />
       )}
+	  
       {answer === 1 && (
         <div className={styles.answerContainer}>
           <Image src="/yes.png" width={128} height={128} />
           <h1 className={styles.yesAnswer}>Yes!</h1>
         </div>
       )}
+	  
       {answer === 0 && (
         <div className={styles.answerContainer}>
           <Image src="/no.png" width={128} height={128} />
